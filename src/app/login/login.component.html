@@ -1,0 +1,12 @@
+<form class="form">
+    <h2>Login</h2>
+    <input type="email" [(ngModel)]="email" name="email" id="email" placeholder="Email">
+    <input type="password" [(ngModel)]="password" name="password" id="password" placeholder="Password">
+    <button (click)="login()">Login</button>
+    <button (click)="signUp()">Signup</button>
+</form>
+
+<div class="alert">
+    <p>{{ alert }}</p>
+</div>
+        

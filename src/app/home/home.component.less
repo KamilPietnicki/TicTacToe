@@ -1,0 +1,48 @@
+@import "../../styles.less";
+
+.dashboard {
+    display: block;
+    position: relative;
+
+    width: 320px;
+    height: auto;
+
+    margin: 0 auto;
+
+    .game-info {
+        margin-bottom: 40px;
+
+        p {
+            font-size: 24px;
+            font-family: @sans;
+        }
+
+        span {
+            color: @red;
+        }
+    }
+
+    button {
+        display: inline-block;
+
+        width: 150px;
+        height: 40px;
+        background-color: @red;    
+
+        border: none;
+        margin: 0 auto;
+
+        font-family: @sans;
+        color: oldlace;
+
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:first-of-type {
+            margin-right: 20px;
+        }
+    }
+}

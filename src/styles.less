@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Global vars
+@sans: 'Open Sans', sans-serif;
+@logo-font: 'Righteous', cursive;
+
+@red: #B33F62;
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+
+    background-color: oldlace;
+}
+
+.form {
+
+    width: 300px;
+    margin: 0 auto;
+
+    h2 {
+        font-family: @sans;
+        text-align: center;
+
+        margin-bottom: 40px;
+    }
+
+    input {
+        display: block;
+        margin-bottom: 20px;
+
+        width: 100%;
+        height: 40px;
+
+        font-family: @sans;
+        text-align: center;
+
+        border: none;
+    }
+
+    input::placeholder {
+        font-family: @sans;
+        text-align: center;
+    }
+
+    button {
+        display: block;
+
+        width: 150px;
+        height: 40px;
+        background-color: @red;    
+
+        border: none;
+        margin: 0 auto;
+
+        margin-top: 20px;
+
+        font-family: @sans;
+        color: oldlace;
+
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.alert {
+    margin-top: 40px;
+
+    font-family: @sans;
+    text-align: center;
+    color: @red;
+}

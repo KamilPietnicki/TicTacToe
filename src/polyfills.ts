@@ -60,4 +60,8 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
- */
+*/
+
+// Angular 6+ fix for AWS
+(window as any).global = window;
+

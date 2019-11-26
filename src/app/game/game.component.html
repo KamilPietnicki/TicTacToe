@@ -1,0 +1,24 @@
+<div class="game">
+    <div class="alert">
+        <h1>{{ alert }}</h1>
+    </div>
+
+    <div class="board">
+        <div class="cell br bb" id="0"  (click)="playerMove(0)"></div>
+        <div class="cell br bb" id="1"  (click)="playerMove(1)"></div>
+        <div class="cell bb"    id="2"  (click)="playerMove(2)"></div>
+
+        <div class="cell br bb" id="3"  (click)="playerMove(3)"></div>
+        <div class="cell br bb" id="4"  (click)="playerMove(4)"></div>
+        <div class="cell bb"    id="5"  (click)="playerMove(5)"></div>
+
+        <div class="cell br"    id="6"  (click)="playerMove(6)"></div>
+        <div class="cell br"    id="7"  (click)="playerMove(7)"></div>
+        <div class="cell"       id="8"  (click)="playerMove(8)"></div>
+    </div>
+</div>
+
+<div class="menu" id="menu">
+    <button (click)="restart()">Restart</button>
+    <button (click)="goHome()">Home</button>
+</div>
